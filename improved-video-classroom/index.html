@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>The Improved Video Classroom</title>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Karan Mhatre</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/">Case Studies</a></li>
+                <li><a href="/about">About Me</a></li>
+                <!-- <li><a href="/illustrations">Illustrations</a></li> -->
+                <li><a href="/creative-coding">Creative Coding</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="pageContent">
+        
+<section id="projectHero" class="videoBg">
+    <div class="content">
+        <p class="year">2021 - UX and UI Design</p>
+        <h2>Helping teachers effectively manage more students in an online Classroom</h2>
+    </div>
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1638441349/vc-hero-image_ucnalo.png" alt="">
+    </div>
+</section>
+<section class="content-section">
+    <h2>The Project and My Role</h2>
+    <p>WhiteHatJR had so far been providing one-to-one live interactive classes for students between the ages 6-14. In these classes, a teacher would teach a single student at a time.</p>
+    <p>The Class consisted of an Introduction, some activities that the student performs, and a wrap-up or summary of the entire class.</p>
+    <p>Since the classes were one-to-one, they were expensive.</p>
+    <p>We wanted to launch a product that will cater to a more price-sensitive audience, and at the same time not overburden the teacher, so that the learning quality would not be hampered.</p>
+    <p><b>The Project was to create a teacher side and student side experience that would allow a teacher to have a classroom with 4 students while minimising the loss of quality.</b></p>
+    <p>There was an existing classroom product that the teacher had been using. We were to revamp that and solve for existing issues as well.</p>
+    
+    <p>I worked on this project for 3 months from December 2020 to February 2021.</p>
+    <p>The team comprised of one Product Manager, 2 designers, and 4 developers.</p>
+
+    <p>My role included,</p>
+    <ul>
+        <li>Conducting User Tests</li>
+        <li>Conducting User Interviews</li>
+        <li>Wireframing, Prototyping, and Testing</li>
+        <li>Interface Design</li>
+        <li>Collaborating with developers on feasibility and final execution</li>
+    </ul>
+
+    <h2>Constraints</h2>
+    <p>We were to work upon the existing class flow, meaning no changes in the curriculum or teacher training were to be made.</p>
+    <p>The product was to be designed only for the desktop, since our students accessed it only from the desktop computers.</p>
+    <p>Teachers were already comfortable with the exisiting classroom product that they’d been using for one-to-one teaching. Hence, this new solution should remain as close to the original as possible to reduce the learning curve.</p>
+
+    <h2>Challenges</h2>
+    <p>We wanted to help the teachers conduct classes with 4 students at the same time. WhiteHatJr’s key differentiator in the market has always been personalised learning. We were not willing to comprise on this while scaling up to a one-to-four classroom experience.</p> 
+    
+    <p>We needed to take care of four things,</p>
+    
+    <ul>
+        <li>Teacher should be able to control the class.</li>
+        <li>Teacher should be able to solve individual student doubts without distrating others.</li>
+    </ul>
+
+    <h2>The User</h2>
+    <p>We were working for two sets of users - the teacher, and the student.</p>
+    <p><b>Student</b> - The user is a 6-14 year old student. Their aspirations are to learn coding from their teacher.</p>
+        
+    <p>To achieve these aspirations, they need to attend classes on time, get attention from the teacher to solve their doubts, and motivation from the teacher to complete their class activities.</p>
+        
+    <p><b>Teacher</b> - The teacher is a 25-40 year old housewife. Their aspirations are to get a good rating from the student and parent for their classes. </p>
+        
+    <p>To achieve these aspirations, they need to have the right tools to monitor the students during the class, and they need guides and visual aids to teach better.</p>
+    
+
+    <h2>User Research and Insights</h2>
+    <p>We asked 3 teachers to conduct 4-to-1 classes on Google Meet. We recorded the classes and reviewed them for insights.</p>
+
+    <p>Also, since our students build apps, I conducted a product design session with 12 students to help them understand design principles. This helped me tremendosly in understanding the painpoints of managing an online classroom of kids.</p>
+    
+    <p>Post this, we conducted interviews with these teachers.</p>
+
+    <p>Interview Questions for Teachers</p>
+    <ol>
+        <li>What features do you like about the current product?</li>
+        <li>What additional tools do you need?</li>
+    </ol>
+    
+    <p>We realised 3 things at the end of the this research,</p>
+    <ul>
+        <li>We realised that students were not well equiped to handle classroom controls such as muting-unmuting themselves, and this led to some distractions in the class. We decided to keep the student controls to a minimum and let the teacher guide the controls from their side instead to minimise the need to non-learning related conversations.</li>
+        <li>The teacher needed to help out individual students with their assignment when they were stuck, and during this the other students would get distracted. We needed some form of breakout rooms where the teacher could have personal conversations with a few selected students.</li>
+        <li>Students had a difficult time understanding how to share their screen. This was necessary since the teacher needed to review the work being done by the kids. We decided to add coach marks that could be initiated by the teacher.</li>
+    </ul>
+
+    <h2>Classroom User Flows</h2>
+        
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1638853556/user_flow_q8wlme.png" alt="">
+        <span>Classroom user flows</span>
+    </div>
+
+    <h2>Reviewing Existing Video Conferencing Platforms</h2>
+    <p>We reviewed the two most popular platforms for video conferencing - Google Meet, adn Zoom. Since teachers (and students due to virtual schooling) were familiar with these two platforms, we wanted to use existing knowledge to make our interface easier to understand.</p>
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1638855707/comp-reviw_rrwvb7.png" alt="">
+        <span>Study of Google Meet and Zoom</span>
+    </div>
+
+    <h2>Wireframes</h2>
+    <p>We wireframed it in 3 parts,</p>
+    <ul>
+        <li>Teacher side - Basic Camera Configurations</li>
+        <li>Teacher side - Breakout Rooms</li>
+        <li>Teacher side - Teacher Slideshows</li>
+        <li>Teacher side - Monitoring Student Activities</li>
+        <li>Student Side - Complete Product</li>
+    </ul>
+
+    <h2>Teacher Side - Basic Camera Configurations</h2>
+    <p>It was important that the teacher could always see all the students in the class.</p>
+    <p>There were two views we needed to take care of,</p>
+    <ul>
+        <li><b>Default Camera View</b> - To be used during the Introduction and Wrap-up stages of the class</li>
+        <li><b>Slides View</b> - To be used while teaching with visual aids</li>
+        <li><b>Activity View</b> - To be used while the teacher or student performs an activity</li>
+    </ul>
+    
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1638886170/default_camera_lgfcb8.png" alt="">
+        <span>Default Camera View</span>
+    </div>
+
+    <p>Depending on what needs to be displayed on the screen, the camera views need to be adjusted accordingly. In the Activity View, we have kept a floating view because we need to give maximum available space for the activity and the camera views may get in the way of some critical information.</p>
+
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1638886417/slides_und_activity_m0picl.png" alt="">
+        <span>Slides and Activity Views</span>
+    </div>
+    
+    <h2>Teacher Side - Breakout Rooms</h2>
+    <p>To enable the teacher to provide a personalised experience to students we decided to introduce breakout rooms. A breakout room is a room the teacher can create to have private discussion with a selected few students.</p>
+    <p>This is important to resolve doubts and queries, as well as help students that are lagging in their class activities.</p>
+    <ul>
+        <li>Teachers can add students to a breakout room.</li>
+        <li>Teachers can listen in on the main room if required to make sure the students are behaving.</li>
+        <li>Teachers can end the breakout room once done.</li>
+        <li>Students cannot initiate breakout rooms themselves. Only teachers can.</li>
+    </ul>
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1638884702/bor-flow_fybscs.png" alt="">
+        <span>Breakout Rooms User Flow</span>
+    </div>
+
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1638884703/breakout_room_kbagzr.png" alt="">
+        <span>Teacher Side Wireframes</span>
+    </div>
+
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1638886128/bor-controls_nvcen5.png" alt="">
+        <span>Teacher Side Controls</span>
+    </div>
+
+    <h2>Teacher Side - Slides</h2>
+    <p>In order to help the teachers follow a structure to the class, as well as to introduce some sort of visual aid for the student, we introduced slideshows. The slides could be controlled by the teacher. The teacher was also able to get additional notes on their slides, and these were not visible to the students. These notes suggested additional pointers that the teachers could use while taking the class.</p>
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/c_scale,w_2400/v1624289301/Website/Case%20Studies/Classroom/teacher-slides_gfbz45.png" alt="">
+        <span>Student Breakout Room - When the student is not in the breakout room</span>
+    </div>
+
+    <h2>Student Side - Wireframes</h2>
+    <p>The key difference between any other video conferencing platform and ours was that our call was governed/controlled by a single person (the teacher), while the students had minimal control.</p>
+    <p>The student side was to be kept minimal in terms of controls. Students could not control other students (like how GMeet lets users mute each other).</p>
+    <p>A lot of this was borrowed from the existing product. Just the camera views needed to be created.</p>
+
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1638890453/student_wireframes_jqxvtv.png" alt="">
+        <span>Student Side - Classroom Wireframe</span>
+    </div>
+
+    <h2>Visual Designs</h2>
+    <p>The visual designs were completed with the help of teh central design team to make sure that there was consistency in the visual language.</p>
+
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/c_scale,w_2400/v1624289305/Website/Case%20Studies/Classroom/student-ui_kwur1t.png" alt="">
+        <span>Student Side UI</span>
+    </div>
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/c_scale,w_2400/v1624289300/Website/Case%20Studies/Classroom/teacher-ui_bn3phz.png" alt="">
+        <span>Teacher Side UI</span>
+    </div>
+    
+    <h2>Impact and Future Scope</h2>
+    <p>Over 10k+ students use this classroom daily.</p>
+    <p>Using this feature, WhiteHatJr was able to launch a new business vertical that attract a significantly large new userbase.<i>[Confidential data hidden]</i></p>
+    <p>This helped us stay ahead of our competition by providing a superior classroom experience to the student and teacher.</p>
+    <p>We received an NPS of 60 from teachers on this release.</p>
+    <p><b>We plan to add the following in the upcoming releases,</b></p>
+    <ul>
+        <li>6-student support</li>
+        <li>Multiple breakout rooms</li>
+        <li>Collaborative activities which multiple students can work together on</li>
+        <li>More in-class rewards and celebrations</li>
+        <li>Dynamic slides that the students can interact with</li>
+    </ul>
+</section>
+    </main>
+    <footer>
+        <div class="social">
+            <ul>
+                <li><a href="instagram.com/onesquarekaran" target="_blank"><img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1623341262/Website/instagram_xunhmm.svg" alt=""></a></li>
+                <li><a href="linkedin.com/in/karanmhatre/"><img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1623341262/Website/linkedin_awygii.svg" alt=""></a></li>
+                <li><a href="https://github.com/karanmhatre1"><img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1623341262/Website/github_sqw2he.svg" alt=""></a></li>
+                <li><a href="https://karanmhatre.medium.com/"><img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1623341262/Website/medium_en6czv.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <p id="credit">
+            This website was built with love by me using the Eleventy Framework.
+        </p>
+    </footer>
+</body>
+</html>
