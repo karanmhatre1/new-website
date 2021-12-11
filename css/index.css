@@ -146,6 +146,10 @@ nav {
     line-height: 160%;
 }
 
+#hero .image {
+    padding: 20px;
+}
+
 #hero .image img {
     width: 100%;
 }
