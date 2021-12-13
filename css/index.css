@@ -1,4 +1,7 @@
 /* Global Styles */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -21,7 +24,11 @@ h3 {
 }
 
 p, ul li, ol li {
-    line-height: 160%;
+    line-height: 180%;
+}
+
+ul ul {
+    margin-top: 12px;
 }
 
 a {
@@ -29,6 +36,7 @@ a {
     font-weight: 600;
     text-decoration: none;
     padding: 5px 0;
+    padding-bottom: 0px;
     border-bottom: 2px solid #111;
     transition: .2s;
 }
@@ -47,15 +55,11 @@ ul li, ol li {
     margin: 0;
 }
 
-.container-small {
-    padding: 20px;
-}
-
 @media (min-width: 600px) {
     .container-small {
         width: 600px;
+        padding: 20px;
         margin: auto;
-        padding: 0;
     }
 }
 
@@ -453,4 +457,60 @@ footer {
         align-items: center;
         padding: 10px;
     }
+}
+
+.container-large {
+    position: relative;
+}
+
+#aboutNav {
+    display: none;
+    position: sticky;
+    padding: 50px;
+    top: 0;
+}
+
+@media (min-width: 600px) {
+
+    .container-large {
+        position: relative;
+        display: flex;
+        width: 1200px;
+        margin: auto;
+    }
+
+    #aboutNav {
+        display: block;
+    }
+}
+
+
+.wrapper {
+    width: 400px;
+}
+
+.container-small {
+    position: relative;
+    top: 0;
+    padding: 0px 20px;
+}
+
+#aboutNav ul {
+    padding: 0;
+    list-style: none;
+}
+
+#aboutNav ul li {
+    margin: 0;
+}
+
+#aboutNav ul li a {
+    padding: 5px 12px;
+    display: inline-block;
+    border: none;
+    font-weight: 400;
+}
+
+#aboutNav ul li a.bold {
+    font-weight: 600;
 }

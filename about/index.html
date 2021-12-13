@@ -30,6 +30,25 @@
     </div>
 </section> -->
 
+<script>
+
+    window.addEventListener('scroll', function() {
+
+        var allLinks = document.getElementsByClassName('pageLink');
+        console.log('here');
+
+        for(i=0;i<allLinks.length;i++) {
+            section = document.querySelector(allLinks[i].getAttribute('href'));
+            if(section.offsetTop < window.scrollY) {
+                allLinks[i].classList.add("bold");
+            }
+            else {
+                allLinks[i].classList.remove("bold");
+            }
+        }
+    });
+    
+</script>
 
 <section id="hero">
     <div class="image">
@@ -43,69 +62,128 @@
 <section id="creative-coding" class="container-small">
     <h2>Hi, I'm Karan, and I've been working with digital products for the past 10 years.</h2>
 </section> -->
-
-<div class="container-small">
-    <div class="para">
-        <p>I have hands-on experience designing and coding digital products. I believe that great products are built on the foundation of structured data analysis and user research.</p>
-        <p>Through my career I have worn many hats - a front-end developer, a product manager, and a now a product designer.</p>
-        <p>My versatility in skill-sets gives me a great perspective when it comes to product thinking and problem solving.</p>
+<div class="container-large">
+    <div class="wrapper">
+        <div id="aboutNav">
+            <ul>
+                <li><a class="pageLink" href="#hero">Summary</a></li>
+                <li><a class="pageLink" href="#engineering">Engineering</a></li>
+                <li><a class="pageLink" href="#genii"> UX Lead at Genii</a></li>
+                <li><a class="pageLink" href="#practo">PM at Practo</a></li>
+                <li><a class="pageLink" href="#goqii">PM at GOQii</a></li>
+                <li><a class="pageLink" href="#ux">Why UX Design, again</a></li>
+                <li><a class="pageLink" href="#whjr">Design at WhiteHatJR</a></li>
+                <!-- <li><a class="pageLink" href="#">Other Things</a></li> -->
+                <li><a class="pageLink" href="#next">What's Next</a></li>
+            </ul>
+        </div>
     </div>
-    <h2>Experience</h2>
-    <div class="para">
-        <h3>Lead Product Designer at WhiteHatJr (Now part of Byjus Group)</h3>
-        <p>Jul 2020 - Present · 1 yr 6 mos</p>
-        <ul>
-            <li>Designing the Learning Experience for children, ages 8 to 14.</li>
-            <li>Working primarily on the gamification related projects, and making learning a fun experience for kids.</li>
-            <li>Conducting research interviews with students, and teachers</li>
-            <li>Designing user flows, interfaces, and illustrations</li>
-            <li>Mentoring junior designers, and reviewing their work to ensure quality design execution across the team.</li>
-            <li>Closely working with the development team to ensure that designs are not just good on Figma.</li>
-            <li>Responsible for the ideation and design of multiple successful feature launches that moved critical business metrics for the company.</li>
-        </ul> 
-    </div>
-    <div class="para">
-        <h3>Senior Product Manager at GOQii</h3>
-        <p>May 2017 to Apr 2020 · 3 yrs</p>
-        <ul>
-            <li>Worked as the Product Manager on GOQii’s Lifestyle Coaching Product. Improved coach capacity from 100 to 300+ users per coach and helped reduce coaching costs by improving the product and automating mundane tasks. </li>
-            <li>Devised the product strategy and launched the GOQii Play product in 2018 : Alive video streaming service for health and fitness classes. Grew the product ground up from zero to having 100k+ monthly active users.</li>
-            <li>Launched the India Health Quiz Challenge on the GOQii app with Akshay Kumar as the brand ambassador - saw 2M+ users engaging over 100 days.</li>
-        </ul>
-    </div>
-    <div class="para">
-        <h3>Product Manager at Practo</h3>
-        <p>Jul 2015 to Mar 2017 · 1 yr 9 mos</p>
-        <ul>
-            <li>Worked as the Product Manager for Hospital and Clinic listing on practo.com </li>
-            <li>Responsible for setting data collection processes and designing the user experience for consumers searching for hospitals and clinics. Listed 6k+ hospitals and improved monthly active users on practo.com by 10k+</li>
-            <li>Worked as the Product Manager on the “Practo Tab” product - an android tablet-based clinic management (SAAS) product that eased the work of a receptionist at a doctor’s clinic. Launched a hospital variant as well. Used by 5k+ doctors.</li>
-        </ul>
-    </div>
+    <div class="container-small">
+        <div class="para">
+            <p>Through my career I have worn many hats - a front-end developer, a product manager, and a now a product designer.</p>
     
-    <div class="para">
-        <h3>UX Lead at Genii Technologies (Acqui-hired by Practo in Jul 2015)</h3>
-        <p>Dec 2014 - Jul 2015 · 8 mos</p>
-        <ul>
-            <li>Hired and led a team of 5 designers at Genii (a software services company dealing mainly with start-ups).</li>
-            <li>Successfully delivered several design projects ranging from e-commerce designs to rich mobile app experiences.</li>
-            <li>Introduced and set up formal processes for conducting User Experience Research.</li>
-        </ul>
-    </div>
-
-    <div class="para">
-        <h3>Co Founder at One Square Pixel</h3>
-        <p>May 2012 - Nov 2014 · 2 yr 7 mos</p>
-        <p>As a freelancer, I delivered end-to-end web solutions for clients - Ranging from Process Optimisation Business Tools to Event Management Websites. Later hired and managed a team of four developers. </p>
-        <p>My role here included responsibilities of sales, scope and ideation, conceptualisation and design of the user interface, front-end and backend development. Worked with NH7 (now Insider.in), Phantom Films, Tata LitLive Festival, Gibson Guitars India. </p>
-        <p>I hired three developers to help with projects and brought in a co-founder with expertise in tech.</p>
-    </div>
-
-    <h2>One thing that has always remained at the heart of this journey has been creating engaging and delightful digital experiences for users.</h2>
-    <div class="para">
-        <p>I love creating art through code, I love painting urban landscapes and architectural structures in watercolour.</p>
-        <p>I make zines containing sketches from my travels.</p>
-        <p>Ich lerne gern Deutsch.</p>
+            <p>My versatility in skill-sets gives me a great perspective when it comes to product thinking and problem solving.</p>
+                
+            <p>I have worked across small and large teams to deliver impact fuel products in both the B2B, and B2C industries. I am passionate about UX Research, and UX Design, and have experience working in the Healthcare and Education space. </p>
+                
+            <p>I am a quick learner and a generalist. I'm interested in the topics of Education, Art, and Creative Coding. </p>
+         
+        </div>
+        <h2>One thing that has always remained at the heart of this journey has been creating engaging and delightful digital experiences for users.</h2>
+        <div class="para">
+            <p>Currently, I work with Byju’s (India’s Leading EduTech Startup) as a Lead Product Designer. At Byju’s I design products for 6 to 14 years ago students to attend live classes. This includes the video classroom experience, and the student dashboard experience.</p>
+                
+            <p>I believe that great products are built on the foundation of structured data analysis and user research.</p>   
+        </div>
+        <h2 id="engineering">I did my undergrad in Computer Engineering.</h2>
+        <div class="para">
+            <p>Through college I freelanced and built websites for friends and family. This was when I discovered my love for creating digital products. I really enjoyed designing and coding these websites.</p>
+            <p>Me along with a team of 2 created a Timetable generator using Genetic Algorithms as part of our final year project. We were able to implement it in our college for the teacher as well.</p>
+        </div>
+        <h2 id="genii">After Engineering, I joined a small 3-member digital agency named Genii in Mumbai as a front-end developer.</h2>
+        <div class="para">
+            <p>At Genii I worked as a fullstack developer (Front end development and Ruby on Rails) where I slowly transitioned into a UX Designer. I helped them hire a team of five UX Designers and set up UX processes. </p>
+    
+            <p>This was very early in my career. Here I got guidance from the founders on how to improve my skills not only as a UX Designer, but also as a Manager. I quickly got involved in sales, managing clients, and leading projects end-to-end.</p>
+                
+            <p>In 2017, the agency was acqui-hired by Practo Technologies (at the time India’s leading Healthcare Startup).</p>
+        </div>
+        <h2 id="practo">In 2017, I was moved to a Product Management role since I had experience across the complete product lifecycle.</h2>
+        <div class="para">
+            <p><i>Practo is on a mission to make quality healthcare affordable and accessible for over a billion+ Indians. We believe in empowering our users with the most accurate, comprehensive, and curated information and care, enabling them to make better healthcare decisions.</i></p>
+            <p>During my two years at Practo, I worked as a Product Manager on three major products,</p>
+            <ul>
+                <li>I was tasked with the responsibility to list Hospitals and Clinics on practo.com. I was responsible for setting data collection processes and designing the user experience for consumers searching for hospitals and clinics. I did dry runs by myself going to hospitals and clinics and collecting the data. This helped me understand what data clinics and hospitals were comfortable sharing. I've written about the research I did in this article - <a href="/understanding-the-patient-journey/">Understanding the Patient Journey</a> The article was published on UX Collective. We listed 6k+ hospitals from all over India. Created unique landing page for common searches such as "Root Canal", and "Liposuction". These pages gave the user information about the treatment, told them what to look for when selecting a hospital and gave a list of hospitals in their city. We improved MAU on Practo.com by listing data about hospitals that users were searching for online. We also improved of search ranking by generating content related to common treatments and surgeries.</li>
+                <li>Later, the teams were restructured and I was made the Product Manager on the “Practo Tab” product - an android tablet-based clinic management (SAAS) product that eased the work of a receptionist at a doctor’s clinic. During this time I launched a Consent Form feature that let doctors collect and store consent signatures from patients. 
+                    <ul>
+                        <li><a href="https://help.practo.com/practo-tab/medical-consent-forms-are-now-on-practo-tab/">Release Article</a></li>
+                        <li><a href="https://health.economictimes.indiatimes.com/news/health-it/practo-ray-tab-introduces-digital-consent-forms-for-the-first-time-in-india/56366054"> Economic Times Article</a></li>
+                    </ul>
+                We improved the client base on the Practo Tab by 15% by introducing the right features in 6 months.
+                </li>
+                <li>Similar to the Practo Tablet, we launched a Hospital Kiosk. The objective of this product was to help patients fill registration forms, get directions, access doctor information, pay bills, and book appointments. Pitched the new Hospital Kiosk product to hospitals and got it installed on a trial basis at 5 hospitals.</li>
+            </ul>
+            <!-- <p>My learnings</p>
+            <ul>
+                <li></li>
+            </ul> -->
+            <p>During this time I also completed an Olympic Distance Triathalon and did a couple of chalk murals in the office.</p>
+        </div>
+    
+        <h2 id="goqii">In May 2015, I joined GOQii Technologies as a Senior Product Manager.</h2>
+        <div class="para">
+            <p><i>GOQii connects, tracks and takes care of your entire family’s health through a smart preventive eco-system and GOQii Care team.</i></p>
+            <p>In 2015, <a href="goqii.com">GOQii</a> had a 20-member product team with 4 Product Managers. It had been a 5 year old startup that had raised Series B funding.</p>
+            <p>The product was a range of Fitness Bands and a mobile app that let the user get access to Fitness Coaching.</p>
+            <p>I worked directly with the CEO. It was a fast paced enviornment with quick product releases.</p>
+            <p>I was tasked with handling the experience for the Fitness Coaches as well as the coach interaction on the mobile app. We responsibilities included,</p>
+            <ul>
+                <li>Understanding the requirements from the coaching team and delivering the right features.</li>
+                <li>Understanding the customer's pain points and using the coaching platform to solve for those.</li>
+                <li>Understanding the business goals and implementing unique incentive structures for the coaches to help us achieve these goals.</li>
+            </ul>
+            <p>We managed to improve coach efficiency - Coaching in 2015 were managing 100-120 users each. We were able to move that metric to 250 by 2017. This was done by using a hybrid chat model, where nudges and reminders were automatically sent my the system instead of the coach. We also added better user data views on the coaching dashboard that helped the coach right out to the rright users without wasting too much time deep diving through data.</p>
+            <p>The second project I was part of at GOQii was the India Health Quiz. We had partnered with Indian Celebrity Akshay Kumar to launch a ATL media campaign for GOQii. The center piece of the campaign was Busting Health Related Myths with the help of the India Health Quiz on the GOQii app.</p>
+            <p>I've written more in detail about how we built it in the article below.</p>
+            <ul>
+                <li><a href="/building-goqii-india-health-quiz/">Building the India Health Quiz</a> - Karan Mhatre</li>
+                <li><a href="https://goqii.com/blog/india-health-quiz-2/">Release Article</a></li>
+                <li> <a href="https://www.deccanchronicle.com/technology/in-other-news/100819/goqii-kickstarts-india-health-quiz-2019.html">Deccan Chronicles Article</a></li>
+                <li> <a href="https://www.youtube.com/watch?v=dk0WfzYIZyI&list=PLfkRPBbsoOnPHEhPiW4u-L2PInAxABaXy&index=2&ab_channel=GOQii">Television Advertisement</a></li>
+            </ul>
+        </div>
+        <h2 id="ux">After 5 years of Product Management, I decided I wanted to pursue UX Design again.</h2>
+        <div class="para">
+            <p>There were a few reasons for this change,</p>
+            <ul>
+                <li>I wanted to be close to the Product and the Users again. As you scale higher in the  Product Manager Career Map, the focus moves towards business and financial goals. While I understand why this is important for any company, I believe my passion and expertise lie in Product Thinking.</li>
+                <li>In my PRDs I noticed that there was an overemphasis on UX Design. I loved to create wireframes and prototypes for my products. It helped me think more clearly. In my free time, I would read UX related articles, and rarely found interest in business articles. I didn’t see myself becoming the best Product Manager in the world, but I did see myself becoming the best UX Designer.</li>
+                <li>It was the right time in my career to manage this shift. I believed that my Product Management experience would make me a sharper UX Designer. It was time.</li>
+            </ul>
+        </div>
+        <h2 id="whjr">I joined WhiteHatJR when they were a year old company.</h2>
+        <div class="para">
+            <p>After 5 years in healthcare, I wanted to work in a newer domain, with newer challenges. Since I’ve had a keen interest for Teaching and Coding, I applied to WhiteHatJR (India’s Fastest Growing EduTech Company - $ 300m buyout in 18 months).</p>
+            <p><i>BYJU's FutureSchool is more than just coding, math and music! Our proprietary, activity-based curriculum with live, real-time instruction generates: Problem Solving. Creative Thinking. Grit. Confidence. Communication. And it's a lot of fun, too!</i></p>
+    
+            <p>I started working with them on a contract basis for 3 months and then became full-time.</p>
+            <p>My responsibilities here also included leading a team of designers. While 30% of my time was mentoring the team and reviewing my team’s work, 70% time was spent on projects I owned completely.</p>
+            <p>I joined as a Senior UX Designer and was promoted to Lead UX Designer (with the additional responsibility of managing 3 designers) in 6 months of me joining there.</p> 
+            <p>I was recognised for my work (Employee of the month program) twice in my 14 months there. I was recognised by the CEO for being able to work collaboratively and deliver quality designs.</p>
+            <p>I worked on 3 major products here,</p>
+            <ul>
+                <li>Gamification and the Student Dashboard</li>
+                <li>One-to-many Classroom Experience</li>
+                <li>Student’s Community</li>
+            </ul>
+        </div>
+        <h2 id="next">In Dec 2021, my wife started a job in Berlin. I moved here with her.</h2>
+        <div class="para">
+            <p>I am currently looking for work as a Lead/Senior UX Designer in Berlin. I hope to work with a small team with a strong leader (who can mentor and guide me on improving my skills). I am keen to explore roles that help me make the most of my skills as a Product Manager and Designer.</p>
+            <p>I create art and fun things using code. I am a part of the Creative Code chapter in Berlin.</p>
+            <p>I would love to contact and chat about UX and the startup scene in Berlin.</p> 
+            <p>I appreciate you taking the time to read this.</p>
+        </div>
     </div>
 </div>
     </main>
