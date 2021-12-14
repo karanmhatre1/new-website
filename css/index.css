@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Lora', serif;
     color: #111;
     font-size: 14px;
     box-sizing: border-box;
@@ -33,17 +33,17 @@ ul ul {
 
 a {
     color: #111;
-    font-weight: 600;
+    font-weight: 500;
     text-decoration: none;
     padding: 5px 0;
     padding-bottom: 0px;
     border-bottom: 2px solid #111;
-    transition: .2s;
+    transition: .1s;
 }
 
 a:hover {
-    color: pink;
-    border-bottom: 2px solid pink;
+    color: #FF6978;
+    border-bottom: 2px solid #FF6978;
 }
 
 ul li, ol li {
@@ -100,11 +100,12 @@ header {
 
 header h1 {
     font-size: 24px;
+    font-weight: 500;
     text-align: center;
 }
 
 header a {
-    border: none;
+    border: 2px solid transparent;
 }
 
 nav {
@@ -127,8 +128,8 @@ nav {
         display: flex;
         list-style: none;
         gap: 32px;
-        font-size: 16px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: 400;
     }
 }
 
@@ -143,6 +144,7 @@ nav {
 }
 
 #hero h2 {
+    font-weight: 500;
     margin-bottom: 16px;
 }
 
@@ -151,7 +153,7 @@ nav {
 }
 
 #hero .image {
-    padding: 20px;
+    padding: 0px;
 }
 
 #hero .image img {
@@ -174,6 +176,7 @@ nav {
 
     section#hero .content {
         width: 50%;
+        padding: 0;
         padding-right: 32px;
     }
 
@@ -210,6 +213,7 @@ nav {
 }
 
 .content .year {
+    font-size: 14px;
     margin-bottom: 0;
 }
 
@@ -312,7 +316,7 @@ footer {
 #credit {
     text-align: center;
     width: 80%;
-    margin: 30px auto;
+    margin: 0px auto;
     font-size: 12px;
     color: #666;
 }
