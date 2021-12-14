@@ -132,6 +132,10 @@ nav {
         font-size: 14px;
         font-weight: 400;
     }
+
+    nav ul a.active {
+        border: none;
+    }
 }
 
 /* Hero */
