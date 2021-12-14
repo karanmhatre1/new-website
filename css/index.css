@@ -33,7 +33,7 @@ ul ul {
 
 a {
     color: #111;
-    font-weight: 500;
+    font-weight: 400;
     text-decoration: none;
     padding: 5px 0;
     padding-bottom: 0px;
@@ -100,12 +100,13 @@ header {
 
 header h1 {
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
 }
 
-header a {
+header h1 a {
     border: 2px solid transparent;
+    font-weight: 700;
 }
 
 nav {
@@ -144,7 +145,7 @@ nav {
 }
 
 #hero h2 {
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 16px;
 }
 
@@ -171,7 +172,8 @@ nav {
         flex-direction: row;
         align-items: center;
         margin: 50px auto;
-        margin-bottom: 100px;
+        gap: 50px;
+        /* margin-bottom: 100px; */
     }
 
     section#hero .content {
@@ -182,6 +184,10 @@ nav {
 
     section#hero .image {
         width: 50%;
+    }
+
+    .content { 
+        padding: 0;
     }
 
     #hero h2 {
@@ -212,6 +218,14 @@ nav {
     margin: 16px 0;
 }
 
+#portfolio h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    padding: 20px;
+    color: #111;
+}
+
 .content .year {
     font-size: 14px;
     margin-bottom: 0;
@@ -240,9 +254,9 @@ nav {
     font-size: 24px;
 }
 
-#portfolioSecondary .project-image {
+/* #portfolioSecondary .project-image {
     margin-bottom: 20px; 
-}
+} */
 
 
 #portfolioSecondary .project .content {
@@ -252,6 +266,13 @@ nav {
 @media (min-width: 600px) {
     #portfolio {
         width: 960px;
+    }
+
+    #portfolio h2 {
+        font-size: 64px;
+        font-weight: 700;
+        margin: 100px 0;
+        padding: 0;
     }
 
     #portfolio .project {
@@ -434,8 +455,16 @@ footer {
     padding: 20px;
 }
 
+.grid-projects ul li a {
+    border: none;
+}
+
 .grid-projects ul li video {
     width: 100%;
+}
+
+.grid-projects ul li span {
+    font-size: 14px;
 }
 
 #creative-coding {
@@ -458,8 +487,10 @@ footer {
 
     .grid-projects ul li {
         display: flex;
-        align-items: center;
+        /* align-items: center; */
+        justify-content: center;
         padding: 10px;
+        flex-direction: column;
     }
 }
 
@@ -497,6 +528,10 @@ footer {
     position: relative;
     top: 0;
     padding: 0px 20px;
+}
+
+.container-large .container-small {
+    padding-top: 30px;
 }
 
 #aboutNav ul {
