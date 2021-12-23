@@ -244,6 +244,7 @@ nav {
     line-height: 140%;
     font-size: 24px;
     margin: 16px 0;
+    margin-top: 8px;
 }
 
 #portfolio h2 {
@@ -614,5 +615,5 @@ footer {
 }
 
 #aboutNav ul li a.bold {
-    font-weight: 600;
+    font-weight: 700;
 }
