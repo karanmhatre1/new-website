@@ -442,7 +442,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.content-section ul {
+.content-section ul, .content-section ol {
     padding: 20px;
 }
 
