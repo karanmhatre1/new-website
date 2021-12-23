@@ -4,12 +4,16 @@ html {
 }
 
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Work Sans', serif;
     color: #111;
     font-size: 14px;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Krona One', serif;
 }
 
 h2 {
@@ -21,6 +25,10 @@ h2 {
 h3 {
     line-height: 140%;
     font-size: 24px;
+}
+
+h3 a {
+    border: none;
 }
 
 p, ul li, ol li {
@@ -41,9 +49,15 @@ a {
     transition: .1s;
 }
 
+a.active:hover {
+    color: #111;
+    cursor: default;
+}
+
 a:hover {
-    color: #FF6978;
-    border-bottom: 2px solid #FF6978;
+    color: #001f9a;
+    /* border-bottom: 2px solid #FF6978; */
+    border: 0px solid #fff;
 }
 
 ul li, ol li {
@@ -51,6 +65,11 @@ ul li, ol li {
 }
 
 .image-container img, .image-container video {
+    width: 100%;
+    margin: 0;
+}
+
+.image-container-small img, .image-container-small video {
     width: 100%;
     margin: 0;
 }
@@ -133,6 +152,10 @@ nav {
         font-weight: 400;
     }
 
+    nav ul a {
+        padding-bottom: 5px;
+    }
+
     nav ul a.active {
         border: none;
     }
@@ -143,6 +166,7 @@ nav {
 #hero {
     display: flex;
     flex-direction: column-reverse;
+    justify-content: center;
     width: 100%;
     margin: 10px auto;
     margin-bottom: 40px;
@@ -418,17 +442,21 @@ footer {
     margin-bottom: 20px;
 }
 
-.content-section .image-container {
+.content-section .image-container, .content-section .image-container-small {
     margin-bottom: 20px;
 }
 
-.content-section .image-container span, .content-section .embed span {
+.content-section .image-container span, .content-section .embed span, .image-container-small span {
     font-size: 16px;
     color: #999;
     text-align: center;
     width: 100%;
     margin-top: 5px;
     display: block;
+}
+
+.content-section .embed > div {
+    width: 100%;
 }
 
 @media (min-width: 600px) {
@@ -452,6 +480,14 @@ footer {
 
     .content-section .image-container, .content-section .embed {
         width: 1200px;
+        margin: 40px auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-section .image-container-small {
+        width: 600px;
         margin: 40px auto;
         display: flex;
         flex-direction: column;
