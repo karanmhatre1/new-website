@@ -74,7 +74,7 @@ ul li, ol li {
     margin: 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
     .container-small {
         width: 600px;
         padding: 20px;
@@ -86,13 +86,13 @@ ul li, ol li {
     margin: 30px 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
     .para {
         margin: 40px 0;
     }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
 
     body { 
         font-size: 18px;
@@ -132,7 +132,7 @@ nav {
     display: none;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
 
     header {
         width: 960px;
@@ -193,7 +193,7 @@ nav {
     padding: 20px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
     section#hero {
         width: 960px;
         display: flex;
@@ -292,7 +292,7 @@ nav {
     padding-top: 0px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
     #portfolio {
         width: 960px;
     }
@@ -338,7 +338,7 @@ footer {
     padding-bottom: 25px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
     footer {
         padding-top: 100px;
         padding-bottom: 50px;
@@ -402,6 +402,7 @@ footer {
 }
 
 #projectHero h2 {
+    font-size: 20px;
     text-align: center;
 }
 
@@ -411,7 +412,7 @@ footer {
     align-items: center;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
     #projectHero .content {
         width: 960px;
         margin: auto;
@@ -445,14 +446,14 @@ footer {
 }
 
 .content-section ul, .content-section ol {
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .content-section .image-container, .content-section .image-container-small {
     margin-bottom: 20px;
 }
 
-.content-section .image-container span, .content-section .embed span, .image-container-small span {
+.content-section .image-container span, .content-section .embed span, .image-container-small span, .video-container span {
     font-size: 16px;
     color: #999;
     text-align: center;
@@ -465,7 +466,7 @@ footer {
     width: 100%;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
     .content-section h2, .content-section h3, .content-section ol, .content-section p, .content-section ul {
         width: 700px;
         margin: auto;
@@ -492,6 +493,9 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    .video-container { width: 960px; margin: 0 auto; position: relative; padding-bottom: 56%; padding-top: 30px; height: 0; overflow: hidden; }
+    .video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
 
     .content-section .image-container-small {
         width: 700px;
@@ -525,7 +529,7 @@ footer {
     margin: 50px auto;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
 
     #creative-coding {
         margin: 100px auto;
@@ -563,7 +567,7 @@ footer {
     top: 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 960px) {
 
     .container-large {
         position: relative;
@@ -593,11 +597,6 @@ footer {
 .container-small {
     position: relative;
     top: 0;
-    padding: 0px 20px;
-}
-
-.container-large .container-small {
-    padding-top: 30px;
 }
 
 #aboutNav ul {
@@ -618,4 +617,11 @@ footer {
 
 #aboutNav ul li a.bold {
     font-weight: 700;
+}
+
+@media (min-width: 960px) {
+    .container-large .container-small {
+        padding-top: 30px;
+        padding: 0px 20px;
+    }
 }
