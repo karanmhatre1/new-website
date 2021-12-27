@@ -32,7 +32,7 @@ h3 a {
 }
 
 p, ul li, ol li {
-    line-height: 180%;
+    line-height: 160%;
 }
 
 ul ul {
@@ -418,8 +418,9 @@ footer {
     }
 
     #projectHero .image-container {
-        width: 600px;
+        width: 700px;
         margin: auto;
+        margin-top: 40px;
     }
 
     #projectHero h2 {
@@ -466,7 +467,7 @@ footer {
 
 @media (min-width: 600px) {
     .content-section h2, .content-section h3, .content-section ol, .content-section p, .content-section ul {
-        width: 600px;
+        width: 700px;
         margin: auto;
     }
 
@@ -481,10 +482,11 @@ footer {
 
     .content-section ul {
         margin-top: 20px;
+        padding: 0;
     }
 
     .content-section .image-container, .content-section .embed {
-        width: 1200px;
+        width: 960px;
         margin: 40px auto;
         display: flex;
         flex-direction: column;
@@ -492,7 +494,7 @@ footer {
     }
 
     .content-section .image-container-small {
-        width: 600px;
+        width: 700px;
         margin: 40px auto;
         display: flex;
         flex-direction: column;
