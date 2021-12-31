@@ -53,52 +53,54 @@
                 });
             }
         });
-        let sketch = function(p) {
-            let img;
-            let res = 5;
+        if(screen.width > 500) {
+                let sketch = function(p) {
+                let img;
+                let res = 5;
 
-            p.preload = function() {
-                img = p.loadImage("https://res.cloudinary.com/dgksx9vlc/image/upload/v1640260170/Frame_48095764_popqld.png");
-            }
-
-            p.setup = function() {
-                if(screen.width < 500) {
-                    p.createCanvas(350, 350);
-                    img.resize(350,350);
+                p.preload = function() {
+                    img = p.loadImage("https://res.cloudinary.com/dgksx9vlc/image/upload/v1640260170/Frame_48095764_popqld.png");
                 }
-                else {
-                    p.createCanvas(400, 400);
-                    img.resize(400,400);
+
+                p.setup = function() {
+                    if(screen.width < 500) {
+                        p.createCanvas(350, 350);
+                        img.resize(350,350);
+                    }
+                    else {
+                        p.createCanvas(400, 400);
+                        img.resize(400,400);
+                    }
+                    
+                    img.loadPixels();
                 }
-                
-                img.loadPixels();
-            }
 
-            p.draw = function() {
-                p.background(0);
+                p.draw = function() {
+                    p.background(0);
 
-                res = p.round(p.map(window.pageYOffset, 0, 100, 2, 30));
-                
-                // res = p.round(p.map(p.mouseX, 0, p.width, 2, 30, true));
-                
-                for (let x = 0; x < img.width; x += res) {
-                    for (let y = 0; y < img.height; y += res) {
+                    res = p.round(p.map(window.pageYOffset, 0, 100, 2, 30));
+                    
+                    // res = p.round(p.map(p.mouseX, 0, p.width, 2, 30, true));
+                    
+                    for (let x = 0; x < img.width; x += res) {
+                        for (let y = 0; y < img.height; y += res) {
 
-                    let offset = ((y * img.width) + x) * 4;
-                    let r = img.pixels[offset + 0];
-                    let g = img.pixels[offset + 1];
-                    let b = img.pixels[offset + 2];
-                    let a = img.pixels[offset + 3];
+                        let offset = ((y * img.width) + x) * 4;
+                        let r = img.pixels[offset + 0];
+                        let g = img.pixels[offset + 1];
+                        let b = img.pixels[offset + 2];
+                        let a = img.pixels[offset + 3];
 
-                    p.fill(r, g, b);
-                    p.noStroke();
-                    p.rect(x,y,res,res);
+                        p.fill(r, g, b);
+                        p.noStroke();
+                        p.rect(x,y,res,res);
 
+                        }
                     }
                 }
-            }
-        };
-        new p5(sketch, 'pixelImage');
+            };
+            new p5(sketch, 'pixelImage');
+        }
     </script>
     
 </section>
