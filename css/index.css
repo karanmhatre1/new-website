@@ -183,6 +183,8 @@ nav {
 
 #hero .image {
     padding: 0px;
+    overflow: hidden;
+    height: 375px;
 }
 
 #hero .image img {
@@ -211,7 +213,10 @@ nav {
     }
 
     section#hero .image {
-        width: 50%;
+        /* width: 50%; */
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
     }
 
     .content { 
