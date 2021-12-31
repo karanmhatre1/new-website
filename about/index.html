@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js" integrity="sha512-5T245ZTH0m0RfONiFm2NF0zcYcmAuNzcGyPSQ18j8Bs5Pbfhp5HP1hosrR8XRt5M3kSRqzjNMYpm2+it/AUX/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
     <title>About Me - Karan Mhatre</title>
 </head>
@@ -27,7 +28,215 @@
         </nav>
     </header>
     <main id="pageContent">
-        <section class="content-section">
+        
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+
+        // module aliases
+        var Engine = Matter.Engine,
+            Render = Matter.Render,
+            Runner = Matter.Runner,
+            Bodies = Matter.Bodies,
+            Composite = Matter.Composite,
+            Mouse = Matter.Mouse,
+            MouseConstraint = Matter.MouseConstraint,
+            Events = Matter.Events;
+
+        // create an engine
+        var engine = Engine.create();
+        engine.gravity.y = 0.5;
+        engine.gravity.x = -0.5;
+
+        var boxWidth = 960;
+
+        if(screen.width<900) {
+            boxWidth = screen.width-40;
+        }
+        
+
+        // create a renderer
+        var render = Render.create({
+            element: document.getElementById('box'),
+            engine: engine,
+            options: {
+                width: boxWidth,
+                height: 400,
+                wireframes: false,
+                background: '#FFC700'
+            }
+        });
+
+        // add mouse control
+        var mouse = Mouse.create(render.canvas),
+            mouseConstraint = MouseConstraint.create(engine, {
+                mouse: mouse,
+                constraint: {
+                    stiffness: 0.02,
+                    render: {
+                        visible: false
+                    }
+                }
+            });
+
+        Composite.add(engine.world, mouseConstraint);
+
+        // keep the mouse in sync with rendering
+        render.mouse = mouse;
+
+        var boxB = Bodies.rectangle(500, 80, 200, 56, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640967100/Frame_48095778_wej8ou.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var boxA = Bodies.rectangle(400, 200, 282, 56, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968528/designer_syutuw.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var boxC = Bodies.rectangle(600, 300, 240, 56, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968528/painter_oglmhc.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var circle1 = Bodies.circle(600, 300, 52, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968964/arrow_np4jqz.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var circle2 = Bodies.circle(600, 300, 52, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968964/html_tuxkqw.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var circle3 = Bodies.circle(600, 300, 33, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968964/brush_bbpn1p.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var circle4 = Bodies.circle(600, 300, 52, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968964/figma_ol515b.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var circle5 = Bodies.circle(600, 300, 45, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968964/glasses_hzceop.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var circle6 = Bodies.circle(600, 300, 52, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968964/css_x0r6xj.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var circle7 = Bodies.circle(600, 300, 33, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968965/star_qnyozc.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var circle8 = Bodies.circle(600, 300, 52, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968965/p5js_sc6qlk.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var circle9 = Bodies.circle(600, 300, 32, {
+                render: {
+                    sprite: {
+                        texture: 'https://res.cloudinary.com/dgksx9vlc/image/upload/v1640968965/smile_gbrnn0.png',
+                        xScale: 0.5,
+                        yScale: 0.5
+                    },
+                },
+                restitution: 0.4,
+        });
+
+        var topWall = Bodies.rectangle(480, -1, 960, 1, { isStatic: true });
+        var bottomWall = Bodies.rectangle(480, 401, 960, 1, { isStatic: true });
+        var leftWall = Bodies.rectangle(-1, 200, 1, 400, { isStatic: true });
+        var rightWall = Bodies.rectangle(961, 200, 1, 400, { isStatic: true });
+
+        // add all of the bodies to the world
+        Composite.add(engine.world, [boxB,boxC,boxA, topWall, bottomWall, leftWall, rightWall, circle1,circle2,circle3,circle4,circle5,circle6,circle7,circle8,circle9]);
+
+        // run the renderer
+        Render.run(render);
+
+        // create runner
+        var runner = Runner.create();
+
+        // run the engine
+        Runner.run(runner, engine);
+    });
+</script>
+<section class="content-section">
+    <div id="outerBox">
+        <div id="box"></div>
+    </div>
     <h2>About me</h2>
     <p>I'm a designer, coder, and painter from India. Through my career I have worn many hats - a front-end developer, a product manager, and <b>now a product designer</b>. My versatility in skill-sets gives me a great perspective when it comes to product thinking and problem solving.</p>
     <p>In December 2021, I moved to Berlin with my wife. </p>

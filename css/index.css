@@ -636,3 +636,12 @@ footer {
         padding: 0px 20px;
     }
 }
+
+@media (min-width: 960px) {
+    #outerBox {
+        width: 960px;
+        background-color: #fff;
+        margin: auto;
+        height: 400px;
+    }
+}
