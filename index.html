@@ -41,15 +41,16 @@
     <script>
 
         document.addEventListener("DOMContentLoaded", function(event) {
-            window.addEventListener("scroll", function() {
-                if(window.pageYOffset > 20) {
-                   document.getElementById("originalImage").style.display = "none";
-                }
-                else if(window.pageYOffset <= 20) {
-                   document.getElementById("originalImage").style.display = "block";
-                }
-            });
-
+            if(screen.width > 500) {
+                window.addEventListener("scroll", function() {
+                    if(window.pageYOffset > 20) {
+                    document.getElementById("originalImage").style.display = "none";
+                    }
+                    else if(window.pageYOffset <= 20) {
+                    document.getElementById("originalImage").style.display = "block";
+                    }
+                });
+            }
         });
         let sketch = function(p) {
             let img;
