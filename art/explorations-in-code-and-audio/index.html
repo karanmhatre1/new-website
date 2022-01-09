@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="Explorations in code and audio">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js" integrity="sha512-5T245ZTH0m0RfONiFm2NF0zcYcmAuNzcGyPSQ18j8Bs5Pbfhp5HP1hosrR8XRt5M3kSRqzjNMYpm2+it/AUX/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <title>Explorations in code and audio</title>
+</head>
+<body>
+    <header>
+        <h1><a href="/">Karan Mhatre</a></h1>
+        <nav>
+            <ul>
+                <li><a href="/" class="">Home / Case Studies</a></li>
+                <li><a href="/about" class="">About Me</a></li>
+                <!-- <li><a href="/illustrations">Illustrations</a></li> -->
+                <li><a href="/creative-coding"  class="">Creative Coding</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="pageContent">
+        
+<section id="projectHero" class="instArtBg">
+    <div class="content">
+        <p class="year">2022 - Art Project - Personal</p>
+        <h2>Explorations in Code and Audio</h2>
+    </div>
+    <div class="image-container">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1641732766/audio-thumb_lmrsmm.png" alt="Explorations in code and audio thumbnail">
+    </div>
+</section>
+<section class="content-section">
+    <h2>The Project</h2>
+    <p><b>Timelines:</b> Jan 2022 (1 week)</p>
+    <p><b>Project:</b> To explore what can be done with audio and code. Mainly two aspects were explored,</p>
+    <ul>
+        <li>Creation of audio/noise/music with code</li>
+        <li>Creation of audio-reactive visuals</li>
+    </ul>
+    <p><b>Team:</b>Solo</p>
+    <p><b>Tools:</b> p5.js, tone.js</p>
+    <h2>Artists</h2>
+    <p>I first looked at art created in this space. Below are some of the artists that really appealed to me.</p>
+    <ul>
+        <li><a href="https://www.instagram.com/ksawerykomputery" target="_blank">Ksawery Komputery</a></li>
+        <li><a href="https://www.ryojiikeda.com/" target="_blank">Ryoji Ikeda</a></li>
+        <li><a href="https://creative.maworldgroup.com/creative/ezra-miller/" target="_blank">Ezra Miller</a></li>
+        <li><a href="https://www.instagram.com/maxcoopermax" target="_blank">Max Cooper</a></li>
+        <li><a href="https://www.instagram.com/lispolarny/" target="_blank">lispolarny</a></li>
+        <li><a href="https://www.instagram.com/pauric_freeman" target="_blank">Pauric Freeman</a></li>
+    </ul>
+
+    <h2>Starting with audio creation</h2>
+    <p>I started with understanding <a href="https://tonejs.github.io/" target="_blank">Tone.js</a>. It is a Web Audio framework for creating interactive music in the browser.</p>
+    <p>I used <a href="https://learningsynths.ableton.com/" target="_blank">Ableton's Learning Synths</a> to understand more about synthisizers.</p>
+    <p>I ended up with the below creation. Give it a go. <a href="https://editor.p5js.org/one-generated-pixel/sketches/yH9XbOZD5" target="_blank">Link to the sketch</a></p>
+    <div class="p5Embed">
+        <iframe src="https://editor.p5js.org/one-generated-pixel/full/yH9XbOZD5"></iframe>
+    </div>
+
+    <p>I found some more work done in Browser Audio Experiences</p>
+    <ul>
+        <li><a href="https://skyl.fr/play/eyes" target="_blank">skyl.fr/play/eyes</a></li>
+        <li><a href="http://www.unseen-music.com/yume/" target="_blank">unseen-music.com/yume</a></li>
+        <li><a href="http://jazz.computer/" target="_blank">jazz.computer</a></li>
+        <li><a href="http://alestsurko.by/microscale/" target="_blank">alestsurko.by/microscale</a></li>
+    </ul>
+
+    <h2>Creating “The Cave”</h2>
+    <p>I wanted to create something that has,</p>
+    <ul>
+        <li>A good interactive component: This will be the input for creation from the user. It can be “key interactions”, “mouse movement”, “scroll”,  “text input”, “camera based”.</li>
+        <li>Visuals that are representative of the generated music</li>
+    </ul>
+    <p>The piece “Cave” below is the first one,</p>
+    <ul>
+        <li>There is ambient brown noise.</li>
+        <li>On mouse movement it plays a MonoSynth. Note is dictated by mouse position from center.</li>
+        <li>On mouse click it plays an FM Synth through phaser. Note is dictated by mouse position from center.</li>
+        <li>On a 1% random chance it plays a “glitch” note using a MetalSynth.</li>
+    </ul>
+        
+    <p><b>The modular config is as below.</b></p>
+    <div class="image-container-small">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1641734201/Frame_48095784_rv5zyo.png" alt="module config for The Cave">
+        <span>Modular configuration for "The Cave"</span>
+    </div>
+    <p>The work represents a Cave. The viewer moves in and out experiencing echos.</p>
+    <p><a href="https://editor.p5js.org/one-generated-pixel/full/M280uihnG" target="_blank">The Cave - Fullscreen experience</a></p>
+
+    <div class="p5Embed">
+        <iframe src="https://editor.p5js.org/one-generated-pixel/full/M280uihnG"></iframe>
+    </div>
+
+    <h2>Creating “Spacia”</h2>
+    <p>For the second piece I wanted to create ambient sounds. The viewer controls the timing of the musical notes, but the notes and background frequencies and tones are chosen at random. Every piece created is fresh.</p>
+    <p>The synthaziser config is as below.</p>
+    <div class="image-container-small">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1641734481/audio-sacipa_wfxjej.png" alt="module config for The Cave">
+        <span>Modular configuration for "Scapia"</span>
+    </div>
+    <p>Two ambient synthesizer sounds swell up from the background and wait for the user to click. On clicking, one of the five configurations is applied to play a new note, and change the background notes. At random, there is a phaser controlled sound.</p>
+    <p><a href="https://editor.p5js.org/one-generated-pixel/full/EXvBuuzur" target="_blank">Scapia - Fullscreen experience</a></p>
+    <div class="p5Embed">
+        <iframe src="https://editor.p5js.org/one-generated-pixel/full/EXvBuuzur"></iframe>
+    </div>
+    
+    <h2>Exploring Loops and Purely Generative Music</h2>
+    <p>I wanted to create a continuous generative music piece. No user interaction. Just a piece that will play on creating variations in sounds forever.</p>
+    <p>There are five configurations that the system keeps mixing.</p>
+    <p><a href="https://editor.p5js.org/one-generated-pixel/full/rPXUK0UrP" target="_blank">Sounds#1 - Fullscreen experience</a></p>
+    <div class="p5Embed">
+        <iframe src="https://editor.p5js.org/one-generated-pixel/full/rPXUK0UrP"></iframe>
+    </div>
+
+    <h2>Audio Visuals</h2>
+    <p>I moved on to use tracks by other/better music artist and concentrating on exploring visuals. I looked for tracks on <a href="http://www.freemusicarchive.org">freemusicarchive.org</a></p>
+    <p>I was mainly interested in Chiptune, Noise-Experimental, and Synthwave music since this provided rapid changes in frequency and amplitude. This was perfect to create interesting visuals.</p>
+
+    <h2>Creating “Highway”</h2>
+    <p>I mapped the FFT waveform to rectangles. Then mirrored those horizontally to create sort of a “highway” effect. In relatively simple code, but the result was exciting.</p>
+    <p>You can edit the sketch to add a link to any other song too to see different results.</p>
+    
+    <p><a href="https://editor.p5js.org/one-generated-pixel/full/hO_HR8eVC" target="_blank">Fullscreen - Highway</a></p>
+    <div class="p5Embed">
+        <iframe src="https://editor.p5js.org/one-generated-pixel/full/hO_HR8eVC"></iframe>
+    </div>
+
+    <h2>Creating "Headlights”</h2>
+    <p>Experience strong beats and accompanying visuals that complete the show. The grid size, the fill of the circle, and the size of the circle, all are controlled by the amplitude and frequency of the music being played.</p>
+    <p>You can edit the sketch to add a link to any other song too to see different results.</p>
+    
+    <p><a href="https://editor.p5js.org/one-generated-pixel/full/wkP00wY7G" target="_blank">Fullscreen - Headlights</a></p>
+    <div class="p5Embed">
+        <iframe src="https://editor.p5js.org/one-generated-pixel/full/wkP00wY7G"></iframe>
+    </div>
+
+    <h2>References</h2>
+    <ul>
+        <li><a href="https://oscilloscopemusic.com/watch.php#album" target="_blank">https://oscilloscopemusic.com/watch.php#album</a></li>
+        <li><a href="https://www.youtube.com/watch?v=trZtOaB65w8" target="_blank">https://www.youtube.com/watch?v=trZtOaB65w8</a></li>
+        <li><a href="https://solvingsol.com/" target="_blank">https://solvingsol.com/</a></li>
+        <li><a href="http://radicalart.info/" target="_blank">http://radicalart.info/</a></li>
+        <li><a href="https://curatorsintl.org/special-projects/do-it" target="_blank">https://curatorsintl.org/special-projects/do-it</a></li>
+        <li><a href="https://artsandculture.google.com/project/do-it" target="_blank">https://artsandculture.google.com/project/do-it</a></li>
+        <li><a href="https://www.themarginalian.org/2013/06/03/do-it-the-compendium-hans-ulrich-obrist/" target="_blank">https://www.themarginalian.org/2013/06/03/do-it-the-compendium-hans-ulrich-obrist/</a></li>
+        <li><a href="https://www.moma.org/artists/756" target="_blank">https://www.moma.org/artists/756</a></li>
+        <li><a href="https://www.youtube.com/watch?v=0JsqVlo5Me0&ab_channel=Tate" target="_blank">https://www.youtube.com/watch?v=0JsqVlo5Me0&ab_channel=Tate</a></li>
+        <li><a href="https://www.youtube.com/watch?v=tWr1dYaXzUc&ab_channel=FisunG%C3%BCner" target="_blank">https://www.youtube.com/watch?v=tWr1dYaXzUc&ab_channel=FisunG%C3%BCner</a></li>
+        <li><a href="https://paul.biessmann.de/index.html" target="_blank">https://paul.biessmann.de/index.html</a></li>
+        <li><a href="https://www.youtube.com/watch?v=mCWKIoxe-bI&t=141s&ab_channel=PaulB" target="_blank">https://www.youtube.com/watch?v=mCWKIoxe-bI&t=141s&ab_channel=PaulB</a></li>
+        <li><a href="https://www.youtube.com/watch?v=5QuruN-CEdk&ab_channel=PaulB" target="_blank">https://www.youtube.com/watch?v=5QuruN-CEdk&ab_channel=PaulB</a></li>
+        <li><a href="https://www.youtube.com/watch?v=p-o0gSN5gc4&ab_channel=TranshumanCollective" target="_blank">https://www.youtube.com/watch?v=p-o0gSN5gc4&ab_channel=TranshumanCollective</a></li>
+        <li><a href="https://www.youtube.com/watch?v=34yFcVwq7EM&ab_channel=56KRecords" target="_blank">https://www.youtube.com/watch?v=34yFcVwq7EM&ab_channel=56KRecords</a></li>
+        <li><a href="https://www.youtube.com/watch?v=7kh3RGrJ2fQ&ab_channel=WayneSchmidt" target="_blank">https://www.youtube.com/watch?v=7kh3RGrJ2fQ&ab_channel=WayneSchmidt</a></li>
+        <li><a href="https://www.youtube.com/watch?v=K7cnJPrOzy4&ab_channel=SparxIntros" target="_blank">https://www.youtube.com/watch?v=K7cnJPrOzy4&ab_channel=SparxIntros</a></li>
+        <li><a href="https://www.youtube.com/watch?v=L4PztrhXkXo&ab_channel=Mastodon" target="_blank">https://www.youtube.com/watch?v=L4PztrhXkXo&ab_channel=Mastodon</a></li>
+        <li><a href="https://www.youtube.com/watch?v=MQhUsAugWe4&ab_channel=CepuminsLV" target="_blank">https://www.youtube.com/watch?v=MQhUsAugWe4&ab_channel=CepuminsLV</a></li>
+        <li><a href="https://vimeo.com/168672417?embedded=true&source=vimeo_logo&owner=4348145" target="_blank">https://vimeo.com/168672417?embedded=true&source=vimeo_logo&owner=4348145</a></li>
+        <li><a href="https://vimeo.com/88451951?embedded=true&source=vimeo_logo&owner=2849686" target="_blank">https://vimeo.com/88451951?embedded=true&source=vimeo_logo&owner=2849686</a></li>
+        <li><a href="https://www.youtube.com/watch?v=rJol5InCdI0&ab_channel=LucasHimes" target="_blank">https://www.youtube.com/watch?v=rJol5InCdI0&ab_channel=LucasHimes</a></li>
+        <li><a href="https://musiclab.chromeexperiments.com/" target="_blank">https://musiclab.chromeexperiments.com/</a></li>
+        <li><a href="https://www.instagram.com/ksawerykomputery" target="_blank">https://www.instagram.com/ksawerykomputery</a></li>
+        <li><a href="https://www.ryojiikeda.com/" target="_blank">https://www.ryojiikeda.com/</a></li>
+        <li><a href="https://creative.maworldgroup.com/creative/ezra-miller/" target="_blank">https://creative.maworldgroup.com/creative/ezra-miller/</a></li>
+        <li><a href="https://www.instagram.com/maxcoopermax" target="_blank">https://www.instagram.com/maxcoopermax</a></li>
+        <li><a href="https://www.instagram.com/lispolarny/" target="_blank">https://www.instagram.com/lispolarny/</a></li>
+    </ul>
+
+    <p>Instructional Art is categorised as a sub-genre of Conceptual Art. It is the idea that art does not  need to deliver a direct and easily understandable message, but rather should be left up to the interpretation by the viewer.</p>
+    
+    <h2>Artists of the Movement</h2>
+    <p>Of the most influencial artists that I found were,</p>
+    <ul>
+        <li>Yoko Ono</li>
+        <li>Sol LeWitt</li>
+        <li>Bruce Nauman</li>
+        <li>George Brecht</li>
+    </ul>
+
+    <h2>Instructions as an Order</h2>
+    <p>Instructions do not allow for course correction. Instructions must be followed no matter the new learnings or discovers made on the path. The instructions keep us in order, in line. It is an order that is beyond our own inquiries and judgements.</p>
+
+    <p>This makes instructions powerful. Even if one believes something else, something better can be created, we prevent it.</p>
+
+    <h2>Recreating a piece using code</h2>
+    <p>I found this website called <a href="http://www.solvingsol.com" target="_blank">solvingsol.com</a> started by Brad Bouse. It’s a website that calls from coders to recreate artworks using instructions left by Sol LeWitt.
+    <p>I decided to make a contributing piece. I selected LeWitt’s Drawing No.766 (1994).</p>
+    <div class="image-container-small">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1641216550/image_240_gw1zer.png" alt="Sol LeWitt Drawing No 766">
+        <span>Sol LeWitt Drawing No 766 / Photo Credit: MassMoCa.org</span>
+    </div>
+
+    <p>Instructions - “Twenty-one isometric cubes of varying sizes, each with color ink washes superimposed.”
+
+    <p>Below is my recreation using p5JS. Click to regenerate with a new variation. <a href="https://editor.p5js.org/one-generated-pixel/sketches/47vAFoBBu" target="_blank">See the code</a>.</p>
+
+    <div class="embed">
+        <iframe src="https://editor.p5js.org/one-generated-pixel/full/47vAFoBBu" width="600" height="400"></iframe>
+        <span>Following instructions from Sol LeWitt's Drawing #766</span>
+    </div>
+
+    <p>I made a pull request to add this to the website. Pending as of this writing.</p>
+    <div class="image-container-small">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1641216779/solving-sol-push_oypeag.png" alt="Pull request to Solving Sol">
+        <span>Pull request to Solving Sol</span>
+    </div>
+    
+    <h2>Types of instructions</h2>
+    <p>Back from the detour, here are the different type of instructions I saw being used. Instructions can be given to,</p>
+    <ul>
+        <li>write</li>
+        <li>draw</li>
+        <li>feel</li>
+        <li>perform</li>
+    </ul>
+
+    <h2>Making my own instructions</h2>
+    <p>I created some of my "instructional art pieces" to get a feel for things.</p>
+    <p>
+        <b>Drawing #1</b><br>
+        Make a square grid of odd values (3x3, 5x5...)<br>
+        Write an alphabet followed by a simple shape.
+    </p>
+
+    <div class="image-container-small">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1641216977/drawing-1_hxudsk.png" alt="Drawing 1">
+        <span>Execution of Drawing #1 Instructions</span>
+    </div>
+
+    <p>
+        <b>Drawing #2</b><br>
+        Draw lines reaching from the top to bottom on the page.<br>
+        Make sure each line touches the previous one exactly once, but doesn’t intersect any line.
+    </p>
+
+    <div class="image-container-small">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1641217069/drawing-2_ln067d.png" alt="Execution of Drawing 2">
+        <span>Execution of Drawing #2 Instructions</span>
+    </div>
+    <p>
+        <b>Drawing #3</b><br>
+        Write a sentence containing 3-6 words using made up alphabets.<br>
+        Only you must know what it means.
+    </p>
+
+    <div class="image-container-small">
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1641217144/drawing-3_bcmv4l.png" alt="Drawing 3">
+        <span>Execution of Drawing #2 Instructions</span>
+    </div>
+
+    <h2>Learnings and Future Scope</h2>
+    <p>Writing instructions requires clarity in thought. One needs to be precise. There are many interpretations of the same phrase.</p>
+    <p>Marcel Duchamp famously said - “As soon as we start putting our thoughts into words and sentences everyhign gets distorted, language is just no damn good - I use it because I habe to, but I don't put any trust in it. We never understand each other.”</p>
+    <p>Following instructions requires discipline and trust. Trust in the process without applying our own corrections along the way.</p>
+    <p>I want to apply instructions in my day-to-day life. Statements that must be followed without question and course-correction. We usually change our minds a lot during the art of doing. We are not stead-fast in our initial commitment.</p>
+    <p>I want to create a program to create drawing instrctions. I'm a while away from it.</p>
+
+    <h2>References</h2>
+    <ul>
+        <li><a href="https://www.moma.org/explore/inside_out/2010/07/14/from-a-whisper-to-a-scream-following-yoko-onos-instructions/" target="_blank">https://www.moma.org/explore/inside_out/2010/07/14/from-a-whisper-to-a-scream-following-yoko-onos-instructions/</a>  </li>
+        <li><a href="https://massmoca.org/sol-lewitt/" target="_blank">https://massmoca.org/sol-lewitt/</a>  </li>
+        <li><a href="https://solvingsol.com/" target="_blank">https://solvingsol.com/</a>  </li>
+        <li><a href="http://radicalart.info/" target="_blank">http://radicalart.info/</a>  </li>
+        <li><a href="https://curatorsintl.org/special-projects/do-it" target="_blank">https://curatorsintl.org/special-projects/do-it</a>  </li>
+        <li><a href="https://artsandculture.google.com/project/do-it" target="_blank">https://artsandculture.google.com/project/do-it</a>  </li>
+        <li><a href="https://www.themarginalian.org/2013/06/03/do-it-the-compendium-hans-ulrich-obrist/" target="_blank">https://www.themarginalian.org/2013/06/03/do-it-the-compendium-hans-ulrich-obrist/</a>  </li>
+        <li><a href="https://www.moma.org/artists/756" target="_blank">https://www.moma.org/artists/756</a>  </li>
+        <li><a href="https://www.youtube.com/watch?v=0JsqVlo5Me0&ab_channel=Tate" target="_blank">https://www.youtube.com/watch?v=0JsqVlo5Me0&ab_channel=Tate</a>  </li>
+        <li><a href="https://www.youtube.com/watch?v=tWr1dYaXzUc&ab_channel=FisunG%C3%BCner" target="_blank">https://www.youtube.com/watch?v=tWr1dYaXzUc&ab_channel=FisunG%C3%BCner</a>  </li>
+    </ul>
+
+
+</section>
+    </main>
+    <footer>
+        <div class="social">
+            <ul>
+                <li><a href="https://instagram.com/onesquarekaran" target="_blank"><img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1623341262/Website/instagram_xunhmm.svg" alt=""></a></li>
+                <li><a href="https://linkedin.com/in/karanmhatre/" target="_blank"><img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1623341262/Website/linkedin_awygii.svg" alt=""></a></li>
+                <li><a href="https://github.com/karanmhatre1" target="_blank"><img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1623341262/Website/github_sqw2he.svg" alt=""></a></li>
+                <li><a href="https://karanmhatre.medium.com/" target="_blank"><img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1623341262/Website/medium_en6czv.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <p id="credit">
+            This website was built with ❤️ by me using the <a href="https://www.11ty.dev/" target="_blank">Eleventy Framework</a>.
+        </p>
+    </footer>
+</body>
+</html>

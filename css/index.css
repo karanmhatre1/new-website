@@ -468,7 +468,7 @@ footer {
     margin-bottom: 20px;
 }
 
-.content-section .image-container span, .content-section .embed span, .image-container-small span, .video-container span {
+.content-section .image-container span, .content-section .p5Embed span, .content-section .embed span, .image-container-small span, .video-container span {
     font-size: 16px;
     color: #999;
     text-align: center;
@@ -485,7 +485,30 @@ footer {
     border: none;
 }
 
+.p5Embed {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.p5Embed iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    border: none;
+    position: absolute;
+}
+
 @media (min-width: 960px) {
+
+    .p5Embed {
+        width: 700px;
+        padding-top: 40%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
     .content-section h2, .content-section h3, .content-section ol, .content-section p, .content-section ul {
         width: 700px;
         margin: auto;
