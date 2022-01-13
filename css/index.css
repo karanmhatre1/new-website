@@ -396,6 +396,12 @@ footer {
     background-color: #F9F9F9;
 }
 
+#projectHero.typeArtBg {
+    background-color: #000;
+    color: #fff;
+}
+
+
 #projectHero.playBg {
     background-color: #F2F4FF;
 }
