@@ -401,6 +401,11 @@ footer {
     color: #fff;
 }
 
+#projectHero.gibberBg {
+    background-color: #000;
+    color: #1AFDFE;
+}
+
 
 #projectHero.playBg {
     background-color: #F2F4FF;
@@ -472,6 +477,18 @@ footer {
 
 .content-section .image-container, .content-section .image-container-small {
     margin-bottom: 20px;
+}
+
+.content-section .image-container-small audio {
+    width: 100%;
+    display: block;
+}
+
+.content-section .image-container-small pre {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 60px;
+    background-color: #f2f2f2;
 }
 
 .content-section .image-container span, .content-section .p5Embed span, .content-section .embed span, .image-container-small span, .video-container span {
