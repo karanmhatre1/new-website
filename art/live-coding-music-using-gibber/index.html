@@ -74,17 +74,14 @@
 
     <h2>Drums/Precussions</h2>
     <p>I started experimenting with the default drum sets on Gibber. This is a good place to start if you’re new to this. You can create rythmic beats using ‘Tidal Notations’.</p>
-    <div class="image-container-small">
-        <pre>
-            <code>
-d = EDrums();
-d.tidal('kd');
-d.tidal('kd cp');
-d.tidal('kd ~ [kd,ch] ~ cp ~');
-d.tidal('kd ~ [kd*6,ch] ~ <cp cp*6> ~');
-d.tidal('[kd <oh kd*6 ch> ~ kd ~ <cp kd*6>]*3');
-            </code>
-        </pre>
+    <div class="code-block">
+        <p>d = EDrums();<br>
+            d.tidal('kd');<br>
+            d.tidal('kd cp');<br>
+            d.tidal('kd ~ [kd,ch] ~ cp ~');<br>
+            d.tidal('kd ~ [kd*6,ch] ~ <cp cp*6> ~');<br>
+            d.tidal('[kd <oh kd*6 ch> ~ kd ~ <cp kd*6>]*3');<br>
+        </p>
     </div>
     <div class="image-container-small">
         <audio controls>
@@ -98,22 +95,20 @@ d.tidal('[kd <oh kd*6 ch> ~ kd ~ <cp kd*6>]*3');
 
     <h2>Bass</h2>
     <p>Next I tried adding some bass. There were a bunch of preset bass configurations to select from</p>
-    <div class="image-container-small">
-        <pre>
-            <code>
-bass = Synth( 'bass.hollow' )
-b = Synth( 'acidBass2' )
-Monosynth('bass.stab')
-Monosynth('bassPad')
-FM('deepbass')
-Monosynth('bass')
-
-bass.note.tidal( '0 1 4 6 0 ~ 1 ~ 7 -7 ~ 1 -7 1' )
-
-bass = Monosynth( 'bassPad', { decay:4 })
-bass.note.seq( [0,-1,-2,-4], 4 )
-            </code>
-        </pre>
+    <div class="code-block">
+        <p>
+            bass = Synth( 'bass.hollow' )<br>
+            b = Synth( 'acidBass2' )<br>
+            Monosynth('bass.stab')<br>
+            Monosynth('bassPad')<br>
+            FM('deepbass')<br>
+            Monosynth('bass')<br>
+            <br>
+            bass.note.tidal( '0 1 4 6 0 ~ 1 ~ 7 -7 ~ 1 -7 1' )<br>
+            <br>
+            bass = Monosynth( 'bassPad', { decay:4 })<br>
+            bass.note.seq( [0,-1,-2,-4], 4 )
+        </p>
     </div>
     <div class="image-container-small">
         <audio controls>
@@ -126,23 +121,21 @@ bass.note.seq( [0,-1,-2,-4], 4 )
     <h2>Melodies</h2>
     <p>To create melodies there were a lot of interesting synth configurations to try out. I like Chiptune type 8-bit sounds so I mainly gravitated to those.</p>
     
-    <div class="image-container-small">
-        <pre>
-            <code>
-s = Synth('pwm.short')
-s.note.seq(sine(3,3,4), e=Euclid(7,12))    
+    <div class="code-block">
+        <p>
+            s = Synth('pwm.short')
+            s.note.seq(sine(3,3,4), e=Euclid(7,12))    
 
 
-s3 = Synth('square.perc')
-s4 = Synth('square.perc')
+            s3 = Synth('square.perc')
+            s4 = Synth('square.perc')
 
-s3.note.seq(sine(3,3,4), e=Euclid(7,12))      
-s4.note.seq(sine(6,2,4), e=Euclid(9,12))      
+            s3.note.seq(sine(3,3,4), e=Euclid(7,12))      
+            s4.note.seq(sine(6,2,4), e=Euclid(9,12))      
 
-p = FM('perc')
-p.note.tidal('0 2 3 <4 7*8> 1 1 1 ~ <1 2 1*10 3> 2 8*8 ~')
-            </code>
-        </pre>
+            p = FM('perc')
+            p.note.tidal('0 2 3 &#60;4 7*8 &#62; 1 1 1 ~  &#60; 1 2 1*10 3 &#62; 2 8*8 ~')
+        </p>
     </div>
 
     <div class="image-container-small">
