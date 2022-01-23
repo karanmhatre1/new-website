@@ -396,6 +396,10 @@ footer {
     background-color: #F9F9F9;
 }
 
+#projectHero.videofeedArtBg {
+    background-color: #F4ECE0;
+}
+
 #projectHero.typeArtBg {
     background-color: #000;
     color: #fff;
