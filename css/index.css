@@ -186,11 +186,12 @@ nav {
     align-items: center;
     padding: 0px;
     overflow: hidden;
-    height: 375px;
+    /* height: 375px; */
+    justify-content: center;
 }
 
 #hero .image img {
-    width: 100%;
+    width: 60%;
 }
 
 .content {
@@ -223,16 +224,18 @@ ul.career-list li {
     }
 
     section#hero .content {
-        width: 50%;
+        width: 60%;
         padding: 0;
         padding-right: 32px;
     }
 
     section#hero .image {
-        /* width: 50%; */
-        width: 300px;
-        height: 300px;
+        width: 40%;
         overflow: hidden;
+    }
+
+    section#hero .image img {
+        width: 100%;
     }
 
     .content { 
@@ -328,6 +331,7 @@ ul.career-list li {
         margin: 100px 0;
         padding: 0;
     }
+        
 
     #portfolio .project {
         flex-direction: row;
