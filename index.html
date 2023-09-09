@@ -10,7 +10,8 @@
     <link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dgksx9vlc/image/upload/v1692644935/favicon_kvalml.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Work+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.18.0/matter.min.js" integrity="sha512-5T245ZTH0m0RfONiFm2NF0zcYcmAuNzcGyPSQ18j8Bs5Pbfhp5HP1hosrR8XRt5M3kSRqzjNMYpm2+it/AUX/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
@@ -30,50 +31,37 @@
     </header>
     <main id="pageContent">
         
-<section id="hero">
+<section class="hero">
     <div class="image">
-        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1694008549/hero-image_k4ifka.jpg" alt="Painting by Karan Mhatre">
-        <span>PS: I also paint.</span>
+        <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/w_1000/q_auto/hero-image_k4ifka.jpg" alt="Painting by Karan Mhatre">
+        <span>(2020) Power - 100x100 Acrylic on Canvas</span>
     </div>    
     <div class="content">
         <h2>Hello 👋 I'm a Berlin-based product designer</h2>
         <p>I've been working with digital products for over 10 years, and I'm currently a Lead Product Designer at <a href="https://lilt.com" target="_blank">Lilt Inc.</a></p>
-        <a href="/about" class="button">About me</a>
+        <a href="/about" class="button">More about me</a>
     </div>
 </section>
-<section id="portfolio" class="listing-section">
+<section class="listing-section">
     <div class="listing-header">
         <h2>Case Studies</h2>
         <p>An exploration of coding projects, with no real purpose in mind other than creating something.</p>
     </div>
-    <div class="project-list">
-        <div class="project">
-            <div class="content">
-                <p class="year">2021 - UX Design - WhiteHatJR</p>
-                <h3><a href="/improved-video-classroom/">Designing an online classroom experience for teachers</a></h3>
-                <p>Redesigned an existing product experience to help teachers manage additional students in an online classroom.</p>
-                <!-- <a href="/improved-video-classroom/" class="button">Read more</a> -->
-            </div>
+    <div class="item-list">
+        <div>
+            <p>2021 - UX Design - WhiteHatJR</p>
+            <h3><a href="/improved-video-classroom/">Making STEM Education more accessible with group online classes</a></h3>
+            <p>Redesigned an existing product experience to help teachers manage additional students in an online classroom.</p>
         </div>
-        <div class="project">
-            <div class="content">
-                <p class="year">2017 - UX Design and Product - GOQii</p>
-                <h3><a href="/designing-live-health-and-fitness-classes/">Designing Live Online Health Class on mobile</a></h3>
-                <p>Designed and launched a Live Onlione Health and Fitness platform on the GOQii mobile app and grew it to over 500K users in 6 months.</p>
-                <!-- <a href="/designing-live-health-and-fitness-classes/" class="button">Read more</a> -->
-            </div>
+        <div>
+            <p>2017 - UX Design and Product - GOQii</p>
+            <h3><a href="/designing-live-health-and-fitness-classes/">Designing Live Online Health Class on mobile</a></h3>
+            <p>Designed and launched a Live Onlione Health and Fitness platform on the GOQii mobile app and grew it to over 500K users in 6 months.</p>
         </div>
-        <div class="project">
-            <!-- <div class="project-image">
-                <a href="/understanding-the-patient-journey/">
-                    <img src="https://res.cloudinary.com/dgksx9vlc/image/upload/v1640258679/circle-practo_tyhm03.png" alt="Practo Thumbnail">
-                </a>
-            </div> -->
-            <div class="content">
-                <p class="year">2015 - User Research - Practo</p>
-                <h3><a href="/understanding-the-patient-journey/">Understanding Patient behavior when choosing a hospital</a></h3>
-                <p>In 2015, I conducted user research to build that a product that helps patients find the right hospital to meet their needs.</p>
-                <!-- <a href="/understanding-the-patient-journey/" class="button">Read more</a> -->
+        <div>
+            <p>2015 - User Research - Practo</p>
+            <h3><a href="/understanding-the-patient-journey/">Understanding Patient behavior when choosing a hospital</a></h3>
+            <p>In 2015, I conducted user research to build that a product that helps patients find the right hospital to meet their needs.</p>
             </div>
         </div>
     </div>
@@ -83,41 +71,31 @@
         <h2>Essays</h2>
         <p>Documentation of personal projects as well as occasional writings about product design.</p>
     </div>
-    <div class="project-list">
-        <div class="project">
-            <div class="content">
-                <p class="year">2021 - Product Design</p>
-                <h3><a href="/improved-video-classroom/">Online reviews have one major problem</a></h3>
-                <p>I recently went on a trip. I decided to book a hostel from Booking.com. It was a very well rated hostel. On my first day, I met some nice people who were also staying there...</p>
-            </div>
+    <div class="item-list">
+        <div>
+            <p>2021 - Product Design</p>
+            <h3><a href="/improved-video-classroom/">Online reviews have one major problem</a></h3>
+            <p>I recently went on a trip. I decided to book a hostel from Booking...</p>
         </div>
-        <div class="project">
-            <div class="content">
-                <p class="year">2017 - Design Management</p>
-                <h3><a href="/designing-live-health-and-fitness-classes/">Just build a “like” feature</a></h3>
-                <p>Are you tired of stakeholders underestimating the requirements. Learn how to combat it with the power of questions.</p>
-            </div>
+        <div>
+            <p>2017 - Design Management</p>
+            <h3><a href="/designing-live-health-and-fitness-classes/">Just build a “like” feature</a></h3>
+            <p>Are you tired of stakeholders underestimating the requirements...</p>
         </div>
-        <div class="project">
-            <div class="content">
-                <p class="year">Jan 2022 - Art Project</p>
-                <h3><a href="/art/explorations-in-code-and-audio">Experiments in Audio & Code</a></h3>
-                <p>A collection of audio related experiments made using p5js.</p>
-            </div>
+        <div>
+            <p>Jan 2022 - Art Project</p>
+            <h3><a href="/art/explorations-in-code-and-audio">Experiments in Audio & Code</a></h3>
+            <p>A collection of audio related experiments made using p5js.</p>
         </div>
-        <div class="project">
-            <div class="content">
-                <p class="year">Jan 2022 - Art Project</p>
-                <h3><a href="/art/explorations-in-code-and-type/">Experiments with Type & Code</a></h3>
-                <p>A collection of text and typography related experiments made using p5js.</p>
-            </div>
+        <div>
+            <p>Jan 2022 - Art Project</p>
+            <h3><a href="/art/explorations-in-code-and-type/">Experiments with Type & Code</a></h3>
+            <p>A collection of text and typography related experiments made using p5js.</p>
         </div>
-        <div class="project">
-            <div class="content">
-                <p class="year">Jan 2022 - Art Project</p>
-                <h3><a href="/art/exploring-instructional-art/">Instructional Art</a></h3>
-                <p>The root of Instructional Art is the question - Can an idea be a work of art?</p>
-            </div>
+        <div>
+            <p>Jan 2022 - Art Project</p>
+            <h3><a href="/art/exploring-instructional-art/">Instructional Art</a></h3>
+            <p>The root of Instructional Art is the question - Can an idea be a work of art?</p>
         </div>
     </div>
 </section>

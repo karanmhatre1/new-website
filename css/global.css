@@ -1,0 +1,110 @@
+/* Global styles */
+
+html {
+
+    --main-font-color: #111;
+    --font-color-faded: #aaa;
+    --secondary-color: #ff7a18;
+
+    --spacing-s: 8px;
+    --spacing-m: 12px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+
+    --font-s: 12px;
+    --font-base: 14px;
+    --font-l: 18px;
+    --font-xl: 24px;
+    --font-xxl: 33px;
+}
+
+@media (min-width: 960px) {
+    html {
+        --font-s: 14px;
+        --font-base: 16px;
+        --font-l: 18px;
+        --font-xl: 36px;
+        --font-xxl: 54px;
+
+        --spacing-s: 8px;
+        --spacing-m: 24px;
+        --spacing-l: 32px;
+        --spacing-xl: 48px;
+    
+    }
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: var(--main-font-color);
+    font-size: var(--font-base);
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+blockquote, ol, ul {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Krona One', sans-serif;
+    font-weight: bold;
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+}
+
+h1 { font-size: var(--font-xxl); }
+
+h2 { font-size: var(--font-xl); }
+
+h3 { font-size: var(--font-l); }
+
+h4 { font-size: var(--font-m); }
+
+h1 a {
+    text-decoration: none;
+}
+
+h3 a {
+    border: none;
+}
+
+p, ul li, ol li, ul, ol {
+    line-height: 140%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--main-font-color);
+}
+
+a:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+a.active:hover {
+    color: #111;
+    background-color: #fff;
+    cursor: default;
+}
+
+.image-container img, .image-container video {
+    width: 100%;
+    margin: 0;
+}
+
+.image-container-small img, .image-container-small video {
+    width: 100%;
+    margin: 0;
+}
+
+a.button {
+    display: inline-block;
+    border: 2px #111 solid;
+    padding: 12px var(--spacing-l);
+    text-decoration: none;
+}
