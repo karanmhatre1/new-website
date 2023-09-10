@@ -273,6 +273,10 @@ footer {
     color: var(--secondary-color);
 }
 
+.project-metadata > .item > p {
+    margin-bottom: 0;
+}
+
 @media (min-width: 960px) {
     .project-metadata {
         margin: auto;
