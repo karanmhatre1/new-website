@@ -63,9 +63,10 @@ nav {
     display: block;
 }
 
-.hero > .image span {
+.hero > .image > span {
     font-style: italic;
     color: var(--font-color-faded);
+    margin-top: 4px;
     font-size: 12px;
 }
 
