@@ -58,6 +58,11 @@ nav {
     margin: 0 20px;
 }
 
+.hero > .image > img {
+    aspect-ratio: 1 / 1;
+    display: block;
+}
+
 .hero > .image span {
     font-style: italic;
     color: var(--font-color-faded);
